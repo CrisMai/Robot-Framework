@@ -37,3 +37,10 @@ O Robot Framework é usado em uma variedade de contextos, incluindo teste de sof
 automação de processos e testes de aceitação. Ele é uma escolha popular devido à sua 
 simplicidade, flexibilidade e capacidade de colaboração entre equipes de desenvolvimento 
 e teste.
+
+
+Keyword-driven: É uma abordagem de desenvolvimento de testes automatizados utilizando
+palavras-chave para descrever e implementar os passos de teste.
+O código-fonte de uma keyword é desenvolvida em uma linguagem de programação, geralmente
+em Python.
+Um conjunto de keywords de ação é chamada de Library.
