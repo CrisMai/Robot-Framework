@@ -44,3 +44,33 @@ palavras-chave para descrever e implementar os passos de teste.
 O código-fonte de uma keyword é desenvolvida em uma linguagem de programação, geralmente
 em Python.
 Um conjunto de keywords de ação é chamada de Library.
+
+
+Libraries: No Robot Framework, uma "library" (biblioteca) refere-se a um conjunto de 
+palavras-chave (keywords) e métodos que fornecem funcionalidades específicas para os 
+seus testes ou automação. As bibliotecas podem ser internas (built-in), externas 
+(criadas por usuários) ou de terceiros. 
+Elas são essenciais para estender as capacidades do Robot Framework e realizar tarefas 
+específicas, como interação com interfaces de usuário, manipulação de arquivos, chamadas 
+de API, entre outras.
+
+Aqui estão alguns tipos comuns de bibliotecas no Robot Framework:
+
+Built-in libraries: São bibliotecas integradas ao próprio Robot Framework e oferecem
+funcionalidades básicas. Exemplos incluem:
+
+BuiltIn: Fornece palavras-chave úteis para controle de fluxo, manipulação de strings, etc.
+OperatingSystem: Oferece palavras-chave para interagir com o sistema operacional.
+
+Standard libraries: Estas são bibliotecas padrão que são frequentemente usadas para tarefas 
+específicas. Exemplos incluem:
+
+SeleniumLibrary: Para automação de testes web usando Selenium.
+RequestsLibrary: Para fazer chamadas HTTP utilizando a biblioteca Requests.
+DatabaseLibrary: Para interação com bancos de dados.
+
+External libraries: São bibliotecas desenvolvidas por usuários ou por você mesmo para atender 
+a requisitos específicos do projeto. Elas podem ser escritas em Python ou em Java.
+
+Remote libraries: Permite executar palavras-chave em um ambiente separado, muitas vezes 
+em um servidor remoto.
