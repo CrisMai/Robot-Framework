@@ -2,6 +2,8 @@ Resumo do Projeto
 
 Automação de testes de aplicativos WEB e APIs com o Robot Framework.
 
+**-----------------****------------------****---------------****---------------
+
 O Que é Robot-Framework?
 
 O Robot Framework é uma estrutura de automação de teste e automação de 
@@ -38,6 +40,7 @@ automação de processos e testes de aceitação. Ele é uma escolha popular dev
 simplicidade, flexibilidade e capacidade de colaboração entre equipes de desenvolvimento 
 e teste.
 
+**--------------------****-------------------****------------------****-----------------
 
 Keyword-driven: É uma abordagem de desenvolvimento de testes automatizados utilizando
 palavras-chave para descrever e implementar os passos de teste.
@@ -45,6 +48,7 @@ O código-fonte de uma keyword é desenvolvida em uma linguagem de programação
 em Python.
 Um conjunto de keywords de ação é chamada de Library.
 
+**---------------------****-------------------****-------------------****----------------
 
 Libraries: No Robot Framework, uma "library" (biblioteca) refere-se a um conjunto de 
 palavras-chave (keywords) e métodos que fornecem funcionalidades específicas para os 
@@ -74,3 +78,5 @@ a requisitos específicos do projeto. Elas podem ser escritas em Python ou em Ja
 
 Remote libraries: Permite executar palavras-chave em um ambiente separado, muitas vezes 
 em um servidor remoto.
+
+**-------------------------****-------------------****---------------------****-----------------
