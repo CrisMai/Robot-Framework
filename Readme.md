@@ -80,3 +80,10 @@ Remote libraries: Permite executar palavras-chave em um ambiente separado, muita
 em um servidor remoto.
 
 **-------------------------****-------------------****---------------------****-----------------
+
+Setup e Teardown
+
+Setup: algo que é programado para o Robt fazer antes de rodar um teste ou antes de ele 
+rodar uma suite.
+
+Teardown: executa alguma coisa ao final da suíte ou ao final de cada teste.
