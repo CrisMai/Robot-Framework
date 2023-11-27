@@ -2,7 +2,7 @@
 Documentation  Essa suíte testa o site da Amazon.com.br
 Resource       amazon_resources.robot
 Test Setup     Abrir o navegador
-Test Teardown  Fechar o navegador
+# Test Teardown  Fechar o navegador
 
 
 *** Test Cases ***

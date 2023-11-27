@@ -1,13 +1,16 @@
-*** Keywords ***
+
+*** Settings ***
 Library    SeleniumLibrary
 
 *** Variables ***
-${URL}    http://www.amazon.com.br
+${URL}                 http://www.amazon.com.br
+${MENU_ELETRONICOS}    //a[@href='/Eletronicos-e-Tecnologia/b?ie=UTF8&node=16209062011&ref_=nav_cs_eletronics'][contains(.,'Eletronicos')]
 
 
 *** Keywords ***
 Abrir o navegador
     Open Browser    browser=chrome
+    Maximize Browser Window
 
 
 Fechar o navegador
@@ -15,3 +18,4 @@ Fechar o navegador
 
 Acessar a home page do site Amazon.com.br
     Go To    url=${URL}
+    Wait Until Element Is Visible   locator=${MENU_ELETRONICOS}  
