@@ -4,8 +4,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${URL}                 http://www.amazon.com.br
-${MENU_ELETRONICOS}    //a[@href='/Eletronicos-e-Tecnologia/b?ie=UTF8&node=16209062011&ref_=nav_cs_eletronics'][contains(.,'Eletronicos')]
-
+${MENU_ELETRONICOS}    //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
 
 *** Keywords ***
 Abrir o navegador

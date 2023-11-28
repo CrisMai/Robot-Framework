@@ -87,3 +87,38 @@ Setup: algo que é programado para o Robt fazer antes de rodar um teste ou antes
 rodar uma suite.
 
 Teardown: executa alguma coisa ao final da suíte ou ao final de cada teste.
+
+
+*--------------------------****------------------------****-----------------------****-------------
+
+Locators
+
+Um locator é uma forma de identificar um elemento na interface do usuário, como um botão, 
+campo de texto, link, etc., para interagir com ele durante a execução de testes de automação. 
+Os locators são utilizados por bibliotecas como a SeleniumLibrary para localizar elementos na página web.
+
+Existem vários tipos de locators, e cada um tem uma sintaxe específica. Os locators são usados para encontrar 
+elementos HTML com base em atributos específicos, como ID, nome, classe, tag, etc.
+
+Aqui estão alguns exemplos comuns de locators:
+ID:
+Click Element    id=myButton
+
+Name:
+Click Element    name=username
+
+Class Name:
+Click Element    class=myClass
+
+Tag Name:
+Click Element    tag=button
+
+XPath:
+Click Element    xpath=//button[@id='myButton']
+
+CSS Selector:
+Click Element    css=button#myButton
+
+
+
+
