@@ -120,5 +120,28 @@ CSS Selector:
 Click Element    css=button#myButton
 
 
+*----------------****------------------****-----------------****----------------------
+
+Variáveis Embutidas
+
+As variáveis embutidas, também conhecidas como variáveis built-in, no contexto do Robot Framework, 
+são variáveis internas que fornecem informações ou funcionalidades específicas durante a execução 
+dos testes.
+
+Aqui estão algumas das variáveis embutidas mais comuns:
+
+${CURDIR}:
+
+Representa o diretório de trabalho atual.
+
+${TEST NAME}:
+
+Representa o nome do teste atual.
+
+${TEST STATUS}:
+
+Representa o status do teste atual ("PASS", "FAIL", "SKIP", etc.).
+
+
 
 
