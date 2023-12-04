@@ -143,5 +143,31 @@ ${TEST STATUS}:
 Representa o status do teste atual ("PASS", "FAIL", "SKIP", etc.).
 
 
+*----------------****----------------****---------------------****----------------------
+
+Log e Report
+
+Log:
+
+O "log" no Robot Framework refere-se a um arquivo que contém informações detalhadas sobre a 
+execução dos testes.
+O log inclui mensagens de log padrão, mensagens personalizadas inseridas no script, e detalhes 
+sobre cada passo executado durante os testes.
+Ele fornece uma visão mais detalhada e técnica da execução, permitindo identificar possíveis 
+problemas, como falhas em determinados passos ou a captura de screenshots em caso de falha.
+
+
+Report:
+
+O "report" é um resumo mais amigável e de alto nível da execução dos testes.
+Ele geralmente é gerado em formato HTML e fornece uma visão geral do sucesso ou falha dos testes.
+O relatório inclui estatísticas sobre o número de testes bem-sucedidos, falhas, tempo de execução, 
+e pode até conter gráficos visuais para facilitar a compreensão.
+O relatório é uma ferramenta valiosa para uma rápida avaliação do estado geral dos testes.
+
+Enquanto o log fornece detalhes técnicos específicos sobre cada passo da execução, o relatório 
+oferece uma visão resumida e mais amigável para análise.
+
+
 
 
