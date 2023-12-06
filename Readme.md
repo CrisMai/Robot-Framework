@@ -169,5 +169,27 @@ Enquanto o log fornece detalhes técnicos específicos sobre cada passo da execu
 oferece uma visão resumida e mais amigável para análise.
 
 
+*------------------****------------------****------------------------****----------------------
+
+Comandos de Execução
+
+Execução de Diretório: robot nome_do_diretorio
+Este comando executa todos os arquivos de teste em um diretório.
+
+Execução com Tags: robot -i nome_da_tag nome_do_arquivo.robot
+Este comando executa apenas os testes que têm uma tag específica.
+
+Execução Recursiva: robot --recursive nome_do_diretorio
+Este comando executa todos os arquivos de teste em um diretório e em subdiretórios.
+
+Geração de Relatório HTML: robot --outputdir resultados --output output.html nome_do_arquivo.robot
+Este comando gera um relatório HTML na pasta especificada.
+
+Geração de Log: robot --log log.txt nome_do_arquivo.robot
+Este comando gera um arquivo de log com informações detalhadas sobre a execução.
+
+Execução em Paralelo: pabot --processes 2 nome_do_diretorio
+Este comando executa testes em paralelo usando o Pabot, um executor paralelo para o Robot Framework.
+
 
 
