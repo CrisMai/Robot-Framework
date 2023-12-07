@@ -192,4 +192,15 @@ Execução em Paralelo: pabot --processes 2 nome_do_diretorio
 Este comando executa testes em paralelo usando o Pabot, um executor paralelo para o Robot Framework.
 
 
+*-----------------****----------------****-------------------****----------------------------
+
+Gherkin BDD
+
+O Gherkin é uma linguagem de especificação utilizada principalmente em práticas de Desenvolvimento 
+Orientado a Comportamento (BDD - Behavior-Driven Development).
+As principais características da linguagem Gherkin incluem: 
+- Utiliza palavras-chave específicas, como Feature, Scenario, Given, When, Then, entre outras.
+- A linguagem é declarativa, o que significa que se concentra no que o sistema deve fazer, não em como fazê-lo. 
+- A sintaxe é projetada para ser legível e compreensível por não programadores. 
+
 
