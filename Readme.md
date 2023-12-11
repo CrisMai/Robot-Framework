@@ -204,3 +204,31 @@ As principais características da linguagem Gherkin incluem:
 - A sintaxe é projetada para ser legível e compreensível por não programadores. 
 
 
+*------------------****--------------------****----------------------****-----------------------------
+
+Escopos de Variáveis
+
+No Robot Framework, os escopos de variáveis referem-se às diferentes áreas ou contextos onde uma 
+variável pode ser definida e acessada. Isso é importante para entender como as variáveis são tratadas
+em diferentes partes de um script de teste. 
+Existem basicamente três escopos de variáveis no Robot Framework:
+
+- Variáveis Locais (Local Variables):
+
+As variáveis locais são definidas dentro de uma keyword ou test case e só são acessíveis nesse 
+contexto específico.
+Elas não são visíveis em outros test cases ou keywords.
+Variáveis locais são declaradas usando o prefixo "&" antes do nome da variável.
+
+- Variáveis de Test Case (Test Case Variables):
+
+As variáveis de test case são definidas no nível do test case e podem ser acessadas por todas as 
+keywords dentro desse test case.
+Elas não são visíveis em outros test cases.
+Variáveis de test case são declaradas usando o prefixo "$" antes do nome da variável.
+
+- Variáveis Globais (Global Variables):
+
+As variáveis globais são definidas no nível de suíte de testes e podem ser acessadas por todos 
+os test cases e keywords dentro dessa suíte.
+Elas são declaradas usando o prefixo "@" antes do nome da variável.
