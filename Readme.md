@@ -232,3 +232,35 @@ Variáveis de test case são declaradas usando o prefixo "$" antes do nome da va
 As variáveis globais são definidas no nível de suíte de testes e podem ser acessadas por todos 
 os test cases e keywords dentro dessa suíte.
 Elas são declaradas usando o prefixo "@" antes do nome da variável.
+
+
+*------------------****-----------------****-----------------------****-------------------------
+
+Variáveis Simples, Listas e Dicionários
+
+Simples:
+
+Armazenam um único valor.
+Elas são declaradas usando o prefixo $.
+
+Exemplo:
+${nome}    Valor da Variável
+Log    ${nome}
+
+Listas:
+
+São conjuntos ordenados de valores. Cada valor em uma lista é associado a um índice.
+Elas são declaradas usando o prefixo @.
+
+Exemplo:
+@{lista}    Item1    Item2    Item3
+Log    ${lista[0]}    # Acessando o primeiro item da lista
+
+Dicionários:
+
+São conjuntos não ordenados de pares chave-valor.
+Eles são declarados usando o prefixo %.
+
+Exemplo:
+%{dicionario}    Chave1=Valor1    Chave2=Valor2
+Log    ${dicionario}[Chave1]}    # Acessando o valor associado à Chave1
