@@ -264,3 +264,56 @@ Eles são declarados usando o prefixo %.
 Exemplo:
 %{dicionario}    Chave1=Valor1    Chave2=Valor2
 Log    ${dicionario}[Chave1]}    # Acessando o valor associado à Chave1
+
+
+*---------------****-----------------****---------------------****----------------------
+
+Argumentos
+
+Os argumentos são usados para fornecer dados a keywords ou test cases durante a execução.
+Abaixo estão algumas abordagens comuns para lidar com argumentos no Robot Framework:
+
+1- Passagem de Argumentos para Test Cases:
+Os argumentos podem ser passados diretamente para test cases quando eles são chamados.
+
+Exemplo:
+*** Test Cases ***
+Test Case Com Argumentos
+    [Arguments]    ${nome}    ${idade}
+    Log    Nome: ${nome}    Idade: ${idade}
+
+Chamada do Test Case:
+Test Case Com Argumentos    Alice    30
+
+2- Passagem de Argumentos para Keywords:
+Da mesma forma, é possível passar argumentos para keywords.
+
+Exemplo:
+*** Keywords ***
+Keyword Com Argumentos
+    [Arguments]    ${arg1}    ${arg2}
+    Log    Argumento 1: ${arg1}    Argumento 2: ${arg2}
+    
+Chamada da Keyword:
+Keyword Com Argumentos    Valor1    Valor2
+
+3- Usando o Keyword Set Test Variable:
+O keyword Set Test Variable pode ser usado para definir variáveis de teste que podem ser acessadas globalmente.
+
+Exemplo:
+*** Test Cases ***
+Setando Variavel Global
+    ${nome}    Set Test Variable    Alice
+    Log    Nome: ${nome}
+Usando Argumentos Padrão:
+
+4- Pode-se definir argumentos padrão para uma keyword ou test case.
+
+Exemplo:
+*** Keywords ***
+Keyword Com Argumento Padrão
+    [Arguments]    ${nome}    ${idade}=30
+    Log    Nome: ${nome}    Idade: ${idade}
+
+Chamada da Keyword:
+Keyword Com Argumento Padrão    Alice
