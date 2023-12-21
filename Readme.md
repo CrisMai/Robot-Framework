@@ -317,3 +317,18 @@ Keyword Com Argumento Padrão
 
 Chamada da Keyword:
 Keyword Com Argumento Padrão    Alice
+
+
+*-------------****-------------------****------------------****----------------------
+
+Loops
+
+O Robot Framework oferece suporte a estruturas de repetição para criar loops em seus testes. 
+Existem duas principais maneiras de implementar loops no Robot Framework: usando a keyword 
+FOR e a keyword IN.
+
+1. Loop FOR:
+A estrutura do loop FOR no Robot Framework é semelhante ao loop FOR em linguagens de programação tradicionais.
+
+2. Loop IN:
+A estrutura do loop IN é usada para iterar sobre elementos de uma lista, dicionário ou string.
