@@ -11,8 +11,13 @@ Teste de REPEAT KEYWORD
     Usando Repeat keyword
 
 Teste de FOR do tipo IN RANGE
-    [Documentation]  Faz um loop dentro de um intervalo que você passar
+       [Documentation]  Faz um loop dentro de um intervalo que você passar
     Usando FOR IN RANGE
+        Log To Console    ${\n}
+        FOR    ${CONTADOR}    IN RANGE    0    5   opt.STEPS
+            Log To Console    Minha posição agora é: ${CONTADOR}
+            Log    Minha posição agora é: ${CONTADOR}
+        END
 
 Teste de FOR do tipo IN
     [Documentation]  Faz um loop percorrendo a lista que você passar
