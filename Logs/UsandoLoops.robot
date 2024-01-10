@@ -23,8 +23,13 @@ Teste de FOR do tipo IN RANGE
 
 Teste de FOR do tipo IN
     [Documentation]  Faz um loop percorrendo a lista que você passar
+        Usando FOR IN
+        Log To Console    ${\n}
+        FOR    ${FRUTA}    IN    @{MINHA_LISTA_DE_FRUTAS}
+            Log To Console   Minha fruta é: ${FRUTA}
+            No Operation
+        END
     
-
 Teste de FOR do tipo IN ENUMERATE
     [Documentation]  Faz um loop percorrendo a lista que você passar e percorre o indíce da lista
     
