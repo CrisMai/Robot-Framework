@@ -32,8 +32,13 @@ Teste de FOR do tipo IN
     
 Teste de FOR do tipo IN ENUMERATE
     [Documentation]  Faz um loop percorrendo a lista que você passar e percorre o indíce da lista
+        Usando FOR IN ENUMERATE
+        Log To Console    ${\n}
+        FOR    ${INDICE}    ${FRUTA}    IN ENUMERATE    @{MINHA_LISTA_DE_FRUTAS}
+            Log To Console    Minha fruta é: ${INDICE} --> ${FRUTA}
+            No Operation        
+        END
     
-
 Teste de Sair do FOR
     [Documentation]  Você controla quando o FOR deve se encerrar antes de terminar todos os LOOPS
     
