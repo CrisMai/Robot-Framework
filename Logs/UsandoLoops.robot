@@ -41,6 +41,12 @@ Teste de FOR do tipo IN ENUMERATE
     
 Teste de Sair do FOR
     [Documentation]  Você controla quando o FOR deve se encerrar antes de terminar todos os LOOPS
+           Log To Console    ${\n}
+        FOR    ${INDICE}    ${FRUTA}    IN ENUMERATE    @{MINHA_LISTA_DE_FRUTAS}
+            Log To Console    Minha fruta é: ${INDICE} --> ${FRUTA}
+            Exit For Loop If    '${FRUTA}'=='banana'
+            
+        END
     
 *** Keywords ***
 Usando Repeat keyword
