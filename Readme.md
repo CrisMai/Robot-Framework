@@ -332,3 +332,24 @@ A estrutura do loop FOR no Robot Framework é semelhante ao loop FOR em linguage
 
 2. Loop IN:
 A estrutura do loop IN é usada para iterar sobre elementos de uma lista, dicionário ou string.
+
+
+*-----------------****----------------------****----------------------****--------------------
+
+APIs
+
+API, ou Interface de Programação de Aplicações (Application Programming Interface, em inglês), é um conjunto de 
+regras e definições que permite que softwares se comuniquem entre si. Ela define os métodos e formatos de mensagens 
+que os desenvolvedores podem usar para solicitar e receber informações ou realizar operações em um serviço ou aplicação.
+
+A principal função de uma API é proporcionar uma forma padronizada para que diferentes sistemas se conectem e interajam 
+entre si. As APIs podem ser utilizadas para diversos fins, incluindo:
+
+Integração de Sistemas
+Desenvolvimento de Aplicações
+Acesso a Serviços Web
+Desenvolvimento Ágil
+
+As APIs podem ser baseadas em diversos protocolos, como HTTP/HTTPS, REST (Representational State Transfer), 
+SOAP (Simple Object Access Protocol), entre outros. 
+Elas podem retornar dados em diversos formatos, como JSON, XML, ou até mesmo HTML.
