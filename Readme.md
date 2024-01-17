@@ -353,3 +353,32 @@ Desenvolvimento Ágil
 As APIs podem ser baseadas em diversos protocolos, como HTTP/HTTPS, REST (Representational State Transfer), 
 SOAP (Simple Object Access Protocol), entre outros. 
 Elas podem retornar dados em diversos formatos, como JSON, XML, ou até mesmo HTML.
+
+
+*-------------------------****-----------------------****---------------------------****-----------------------
+
+Library Requests
+
+A biblioteca Requests em Robot Framework geralmente se refere à biblioteca RequestsLibrary. 
+Esta biblioteca é uma implementação para o Robot Framework que oferece palavras-chave para realizar operações HTTP, 
+como fazer solicitações (requests) a APIs, verificar respostas e manipular dados JSON.
+
+Aqui está um exemplo básico de como usar a biblioteca RequestsLibrary:
+
+Instale a biblioteca usando o pip:
+pip install robotframework-requests
+
+Importe a biblioteca no seu arquivo de teste:
+*** Settings ***
+Library    RequestsLibrary
+
+Use palavras-chave fornecidas pela biblioteca em seus testes:
+*** Test Cases ***
+Exemplo de Solicitação GET
+    ${response}=    Get Request    http://www.example.com/api/data
+    Log    ${response.status_code}
+    Log    ${response.json()}
+
+Este exemplo faz uma solicitação GET para http://www.example.com/api/data e imprime o código de status e o 
+conteúdo JSON da resposta.
+
