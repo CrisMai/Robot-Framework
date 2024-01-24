@@ -45,3 +45,11 @@ Conferir se o usuário foi cadastrado corretamente
     Log  ${RESPOSTA}
     Dictionary Should Contain Item  ${RESPOSTA}  message  Cadastro realizado com sucesso
     Dictionary Should Contain Key   ${RESPOSTA}  _id
+
+Vou repetir o cadastro do usuário
+     Cadastrar o usuário criado na ServeRest  email=${EMAIL_TESTE}  
+     ...  status_code_desejado=400
+
+
+Verificar se a API não permitiu o cadastro repetido
+    Dictionary Should Contain Item    ${RESPOSTA}    message    Este email já está sendo usado
