@@ -53,3 +53,17 @@ Vou repetir o cadastro do usuário
 
 Verificar se a API não permitiu o cadastro repetido
     Dictionary Should Contain Item    ${RESPOSTA}    message    Este email já está sendo usado
+
+
+Consultar os dados do novo usuário
+    ${resposta_consulta}  GET On Session  alias=ServeRest  url=/usuarios/${ID_USUARIO}  expected_status=200
+    Set Test Variable     ${RESP_CONSULTA}  ${resposta_consulta.json()}
+
+
+Conferir os dados retornados
+    Log   ${RESP_CONSULTA}
+    Dictionary Should Contain Item    ${RESP_CONSULTA}    nome            Fulano da Silva
+    Dictionary Should Contain Item    ${RESP_CONSULTA}    email           ${EMAIL_TESTE}
+    Dictionary Should Contain Item    ${RESP_CONSULTA}    password        1234
+    Dictionary Should Contain Item    ${RESP_CONSULTA}    administrador   true
+    Dictionary Should Contain Item    ${RESP_CONSULTA}    _id             ${ID_USUARIO}
